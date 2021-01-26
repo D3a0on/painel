@@ -38,9 +38,96 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin-bottom: 1rem;
 
     background-color: black;
     font-family: fira-code;
     color: white;
 
 }
+
+
+
+
+.alert {
+    padding: 20px;
+    background-color: rgb(146, 146, 0); /* Red */
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 1rem;
+    width: 20rem;
+  
+    
+    border: 2px solid white;
+    border-radius: 12px;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 32px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+  
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }
+  
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+    
+  #user {
+
+    max-width: 9em
+  }
+
+  .d {
+    margin-top: 12rem;
+    display: inline-flex;
+  }
+
+
+  .line {
+    border-right: 2px solid white;
+    color: white;
+    font-family: "fira-code", monospace;
+    text-align: center;
+    margin: 1 auto;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+
+  .typing-animation {
+
+    animation: blinkCursor 500ms steps(40) infinite normal,
+      typing 4s steps(40) 1s normal both;
+      animation-iteration-count: infinite;
+  }
+
+  @keyframes typing {
+    0% { width: 0em; }
+    50% {  width: 16em;  }
+    100% { width: 0em; }
+  }
+
+  @keyframes blinkCursor {
+    from {
+      border-right-color: white;
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
